@@ -9,6 +9,9 @@ export class AppHome {
     return (
       <div>
         <color-streaks />
+        <div class="centered">
+          <font-loader name="Toronto Subway">milkcrates.me</font-loader>
+        </div>
       </div>
     );
   }

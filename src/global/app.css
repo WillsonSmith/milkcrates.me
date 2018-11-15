@@ -29,3 +29,14 @@
   More info about color theming using Ionic:
   https://beta.ionicframework.com/docs/theming/color-generator
 */
+
+@font-face {
+  font-family: "Toronto Subway";
+  src: url("/assets/fonts/licensed/toronto_subway_bold-web.woff2")
+      format("woff2"),
+    url("/assets/fonts/licensed/toront_subway_bold-web.woff") format("woff");
+}
+
+body {
+  background: #f0ead6;
+}

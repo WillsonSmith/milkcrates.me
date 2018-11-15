@@ -32,7 +32,7 @@ export class ColorStreaks {
       const streak = (
         <color-triangle
           color={color}
-          size={this.getSize(index)}
+          size={`${this.getSize(index)}px`}
           delayStep={index}
           animated
         />

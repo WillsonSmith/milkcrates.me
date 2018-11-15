@@ -28,13 +28,22 @@ export namespace Components {
     'animated': boolean;
     'color': string;
     'delayStep': number;
-    'size': number;
+    'size': string;
   }
   interface ColorTriangleAttributes extends StencilHTMLAttributes {
     'animated'?: boolean;
     'color'?: string;
     'delayStep'?: number;
-    'size'?: number;
+    'size'?: string;
+  }
+
+  interface FontLoader {
+    'name': string;
+    'source': string;
+  }
+  interface FontLoaderAttributes extends StencilHTMLAttributes {
+    'name'?: string;
+    'source'?: string;
   }
 }
 
@@ -44,6 +53,7 @@ declare global {
     'AppRoot': Components.AppRoot;
     'ColorStreaks': Components.ColorStreaks;
     'ColorTriangle': Components.ColorTriangle;
+    'FontLoader': Components.FontLoader;
   }
 
   interface StencilIntrinsicElements {
@@ -51,6 +61,7 @@ declare global {
     'app-root': Components.AppRootAttributes;
     'color-streaks': Components.ColorStreaksAttributes;
     'color-triangle': Components.ColorTriangleAttributes;
+    'font-loader': Components.FontLoaderAttributes;
   }
 
 
@@ -78,11 +89,18 @@ declare global {
     new (): HTMLColorTriangleElement;
   };
 
+  interface HTMLFontLoaderElement extends Components.FontLoader, HTMLStencilElement {}
+  var HTMLFontLoaderElement: {
+    prototype: HTMLFontLoaderElement;
+    new (): HTMLFontLoaderElement;
+  };
+
   interface HTMLElementTagNameMap {
     'app-home': HTMLAppHomeElement
     'app-root': HTMLAppRootElement
     'color-streaks': HTMLColorStreaksElement
     'color-triangle': HTMLColorTriangleElement
+    'font-loader': HTMLFontLoaderElement
   }
 
   interface ElementTagNameMap {
@@ -90,6 +108,7 @@ declare global {
     'app-root': HTMLAppRootElement;
     'color-streaks': HTMLColorStreaksElement;
     'color-triangle': HTMLColorTriangleElement;
+    'font-loader': HTMLFontLoaderElement;
   }
 
 

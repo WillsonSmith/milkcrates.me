@@ -17,7 +17,8 @@
   "dependencies": {
     "@ionic/core": "4.0.0-beta.15",
     "@stencil/core": "0.15.2",
-    "@stencil/router": "^0.3.1"
+    "@stencil/router": "^0.3.1",
+    "fontfaceonload": "^1.0.2"
   },
   "devDependencies": {
     "workbox-build": "3.4.1"

@@ -8,7 +8,7 @@ import { classNames } from "../../../helpers/utils";
 })
 export class ColorTriangle {
   @Prop() color: string;
-  @Prop() size: number;
+  @Prop() size: string;
   @Prop() delayStep: number;
   @Prop() animated: boolean;
 
@@ -21,7 +21,7 @@ export class ColorTriangle {
         )}
         style={{
           "--streak-background-color": `#${this.color}`,
-          "--triangle-size": `${this.size}px`,
+          "--triangle-size": this.size,
           "--animation-delay": `${this.delayStep * 150}ms`
         }}
       />
