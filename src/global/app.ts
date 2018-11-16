@@ -1,5 +1,5 @@
-import "@ionic/core";
-import "@stencil/router";
+// import "@ionic/core";
+// import "@stencil/router";
 
 // import { setupConfig } from '@ionic/core';
 
