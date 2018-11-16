@@ -1,12 +1,12 @@
-import { Component, Prop } from "@stencil/core";
+import { Component } from "@stencil/core";
 
 @Component({
   tag: "app-root",
   styleUrl: "app-root.css"
 })
 export class AppRoot {
-  @Prop({ connect: "ion-toast-controller" })
-  toastCtrl: HTMLIonToastControllerElement;
+  // @Prop({ connect: "ion-toast-controller" })
+  // toastCtrl: HTMLIonToastControllerElement;
 
   /**
    * Handle service worker updates correctly.
@@ -32,11 +32,7 @@ export class AppRoot {
   render() {
     return (
       <main>
-        <stencil-router>
-          <stencil-route-switch scrollTopOffset={0}>
-            <stencil-route url="/" component="app-home" exact={true} />
-          </stencil-route-switch>
-        </stencil-router>
+        <app-home />
       </main>
     );
   }

@@ -1,16 +1,16 @@
-import { Config } from '@stencil/core';
+import { Config } from "@stencil/core";
 
 // https://stenciljs.com/docs/config
 
 export const config: Config = {
   outputTargets: [
     {
-      type: 'www',
+      type: "www",
       serviceWorker: {
-        swSrc: 'src/sw.js'
+        swSrc: "src/sw.js"
       }
     }
   ],
-  globalScript: 'src/global/app.ts',
-  globalStyle: 'src/global/app.css'
+  globalScript: "src/global/app.ts",
+  globalStyle: "src/global/app.css"
 };
