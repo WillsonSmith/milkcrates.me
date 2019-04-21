@@ -1,26 +1,22 @@
 {
-  "name": "@ionic/pwa-toolkit",
-  "private": true,
-  "version": "0.0.1",
-  "author": "Ionic Team",
-  "description": "Ionic PWA Toolkit",
-  "license": "MIT",
-  "files": [
-    "dist/"
-  ],
+  "name": "haunted-milkcrates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "stencil build",
-    "start": "stencil build --dev --watch --serve",
-    "test": "stencil test --spec --e2e",
-    "test.watch": "stencil test --spec --e2e --watch"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "parcel index.html",
+    "build": "parcel build index.html"
   },
+  "author": "= <=> (https://willsonsmith.com)",
+  "license": "ISC",
   "dependencies": {
-    "@ionic/core": "4.0.0-beta.15",
-    "@stencil/core": "0.15.2",
-    "@stencil/router": "^0.3.1",
-    "fontfaceonload": "^1.0.2"
+    "haunted": "^4.2.1",
+    "lit-html": "^1.0.0"
   },
   "devDependencies": {
-    "workbox-build": "3.4.1"
+    "parcel-bundler": "^1.12.3",
+    "postcss-modules": "^1.4.1",
+    "typescript": "^3.4.4"
   }
 }

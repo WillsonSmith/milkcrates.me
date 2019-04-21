@@ -22,15 +22,28 @@
 
     <meta http-equiv="x-ua-compatible" content="IE=Edge" />
 
-    <link href="/build/app.css" rel="stylesheet" />
-    <script src="/build/app.js"></script>
-
-    <link rel="apple-touch-icon" href="/assets/icon/icon.png" />
-    <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico" />
-    <link rel="manifest" href="/manifest.json" />
+    <link href="src/app.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" href="/src/assets/icon/icon.png" />
+    <link rel="icon" type="image/x-icon" href="/src/assets/icon/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
 
   <body>
-    <app-root></app-root>
+    <main>
+        <div>
+            <color-streaks></color-streaks>
+            <div class="centered">
+              <h1>milkcrates.me</h1>
+            </div>
+          </div>
+    </main>
+    <script src="src/app.ts"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js').then(function() {
+          // console.log('Service worker registered.')
+        })
+      }
+    </script>
   </body>
 </html>
