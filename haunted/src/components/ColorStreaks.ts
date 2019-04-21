@@ -3,13 +3,13 @@ import {html} from 'lit-html';
 
 import './components/ColorTriangle';
 
-function getSize(length, count) {
+function getSize(length: number, count: number): number {
   const indexed = length - count + 1;
   return (200 / length) * indexed;
 }
 
 export default function ColorStreaks() {
-  const colors = [
+  const colors: string[] = [
     'e74c3c',
     'e67e22',
     'f1c40f',
@@ -19,7 +19,7 @@ export default function ColorStreaks() {
     '5b3256',
   ];
 
-  const colorLength = colors.length;
+  const colorLength: number = colors.length;
   
   return html`
     <style>

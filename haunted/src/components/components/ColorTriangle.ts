@@ -1,12 +1,16 @@
 import {component} from 'haunted';
 import {html} from 'lit-html';
 
-function classNames(...names) {
-  return names.join(" ");
+import {classNames} from '../../helpers/utils';
+
+interface El extends HTMLElement {
+  color: string;
+  size: string;
+  delayStep: number;
+  animated: boolean;
 }
 
-
-export default function ColorTriangle({color, size, delayStep, animated}) {
+export default function ColorTriangle({color, size, delayStep, animated}: El) {
 
   return html`
     <style>
