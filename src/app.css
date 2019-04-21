@@ -1,9 +1,9 @@
 @font-face {
   font-family: "Toronto Subway";
-  src: url("/assets/fonts/licensed/toronto_subway_bold-web.woff2")
+  src: url("assets/fonts/licensed/toronto_subway_bold-web.woff2")
       format("woff2"),
     /* url("/assets/fonts/licensed/toront_subway_bold-web.woff") format("woff"); */
-    url('/assets/fonts/licensed/toronto_subway_bold-web.ttf');
+    url('assets/fonts/licensed/toronto_subway_bold-web.ttf');
     font-display: swap;
 }
 
