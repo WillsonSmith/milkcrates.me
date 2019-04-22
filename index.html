@@ -29,20 +29,17 @@
   </head>
 
   <body>
+    <color-streaks></color-streaks>
     <main>
-        <div>
-            <color-streaks></color-streaks>
-            <div class="centered">
-              <h1 class="title">milkcrates.me</h1>
-            </div>
-          </div>
+      <div class="centered">
+        <h1 class="title">milkcrates.me</h1>
+      </div>
     </main>
     <script src="src/app.ts"></script>
     <script>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('service-worker.js').then(function() {
-          // console.log('Service worker registered.')
-        })
+        });
       }
     </script>
   </body>
