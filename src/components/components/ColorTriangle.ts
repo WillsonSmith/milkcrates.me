@@ -54,10 +54,10 @@ export default function ColorTriangle({color, size, delayStep, animated}: El) {
     <div
       class=${classNames('ColorTriangle', animated && 'ColorTriangle-animated')}
       style=${`
-          --streak-background-color: #${color};
-          --triangle-size: ${size};
-          --animation-delay: ${delayStep * 150}ms;
-        `}
+        --streak-background-color: #${color};
+        --triangle-size: ${size};
+        --animation-delay: ${delayStep * 150}ms;
+      `}
     >
     </div>
   `;

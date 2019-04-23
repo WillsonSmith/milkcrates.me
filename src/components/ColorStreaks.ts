@@ -20,29 +20,29 @@ export default function ColorStreaks() {
   ];
 
   const colorLength: number = colors.length;
-  
+
   return html`
     <style>
-    :host {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      :host {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
 
-      pointer-events: none;
-    }
+        pointer-events: none;
+      }
     </style>
 
     ${
       colors.reverse().map((color, index) => {
         return html`
           <color-triangle
-          color=${color}
-          size=${getSize(colorLength, index) + 'px'}
-          delay-step=${index}
-          animated
-        ></color-triangle>
+            color=${color}
+            size=${getSize(colorLength, index) + 'px'}
+            delay-step=${index}
+            animated
+          ></color-triangle>
         `;
       })
     }
